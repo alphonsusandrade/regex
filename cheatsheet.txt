@@ -1,0 +1,9 @@
+CARET ^
+    . start of a line
+    . if used immediatly after [ it means negation
+
+MATCH END OF THE LINE
+    . $
+    
+MATCH EMPTY LINES
+    . ^$
