@@ -7,3 +7,11 @@ MATCH END OF THE LINE
     
 MATCH EMPTY LINES
     . ^$
+
+BACK REFERENCES
+    . ([-#])(.*)\1
+    . caracteres são selecionados se precedidos por caracter selecionado anteriormente no grupo 1
+    . exemplo:
+        . ab-ab-ab -> seleciona -ab- pq anteriormente grupo 1 achou traco
+        . ab-ab$ab -> nao seleciona nada p1 
+        
